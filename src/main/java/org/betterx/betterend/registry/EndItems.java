@@ -69,6 +69,9 @@ public class EndItems {
             "enchanted_membrane",
             new EnchantedItem(Items.PHANTOM_MEMBRANE)
     );
+    public static final Item GUIDE_BOOK = BetterEnd.ENABLE_GUIDEBOOK
+            ? registerEndItem("guidebook", new GuideBookItem())
+            : Items.AIR;
 
     // Music Discs
     public final static Item MUSIC_DISC_STRANGE_AND_ALIEN = registerEndDisc(
@@ -351,7 +354,6 @@ public class EndItems {
 
     @ApiStatus.Internal
     public static void ensureStaticallyLoaded() {
-        GuideBookItem.ensureStaticallyLoaded();
         if (BCLib.isDevEnvironment()) {
             DebugHelpers.generateDebugItems();
         }

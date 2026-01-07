@@ -41,10 +41,13 @@ public class BetterEnd {
     public static final ModCore PATCHOULI = ModCore.create("patchouli");
     public static final ModCore HYDROGEN = ModCore.create("hydrogen");
     public static final ModCore TRINKETS_CORE = ModCore.create("trinkets");
+    public static final boolean ENABLE_GUIDEBOOK = false;
     public static final ResourceLocation BYG_ADDITIONS_PACK = C.addDatapack(BYG);
     public static final ResourceLocation NOURISH_ADDITIONS_PACK = C.addDatapack(NOURISH);
     public static final ResourceLocation FLAMBOYANT_ADDITIONS_PACK = C.addDatapack(FLAMBOYANT);
-    public static final ResourceLocation PATCHOULI_ADDITIONS_PACK = C.addDatapack(PATCHOULI);
+    public static final ResourceLocation PATCHOULI_ADDITIONS_PACK = ENABLE_GUIDEBOOK
+            ? C.addDatapack(PATCHOULI)
+            : null;
 
     public BetterEnd(IEventBus modBus) {
         C.registerDatapackListener(modBus);

@@ -72,8 +72,10 @@ public class BetterEndDatagen extends WoverDataGenEntryPoint {
                 .addProvider(NourishItemTagProvider::new);
 
         //Add providers for the patchouli integration
-        addDatapack(BetterEnd.PATCHOULI_ADDITIONS_PACK)
-                .addProvider(PatchouliBookProvider::new);
+        if (BetterEnd.ENABLE_GUIDEBOOK && BetterEnd.PATCHOULI_ADDITIONS_PACK != null) {
+            addDatapack(BetterEnd.PATCHOULI_ADDITIONS_PACK)
+                    .addProvider(PatchouliBookProvider::new);
+        }
     }
 
     @Override
