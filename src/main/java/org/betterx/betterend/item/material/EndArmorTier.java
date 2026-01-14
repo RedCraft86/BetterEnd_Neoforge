@@ -26,6 +26,6 @@ public class EndArmorTier {
     public static ArmorTier AETERNIUM = ArmorTier
             .builder("aeternium")
             .armorMaterial(EndArmorMaterial.AETERNIUM)
-            .armorValuesWithOffset(ArmorTiers.NETHERITE_ARMOR, new ArmorTier.ArmorValues(100))
+            .armorValuesWithOffset(ArmorTiers.NETHERITE_ARMOR, new ArmorTier.ArmorValues(3))
             .build();
 }

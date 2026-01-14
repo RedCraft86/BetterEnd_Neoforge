@@ -3,7 +3,7 @@
     "id": "betterend",
     "version": "21.0.11",
     "name": "Better End",
-    "description": "More content for The End dimension, including new biomes, plants, mobs, mechanics, terrain generation and more.\nMade by:\n- paulevs (code & art)\n- Bulldog83 (code & art)\n- Edos (building)\n- Yuki (art)\n- Seaward (art)\n- Firel (music)\n",
+    "description": "More content for The End dimension, including new biomes, plants, mobs, mechanics, terrain generation and more.\nMade by:\n- paulevs (code & art)\n- Bulldog83 (code & art)\n- Edos (building)\n- Yuki (art)\n- Seaward (art)\n- Firel (music)\n- Raijin\n",
     "authors": [
         "Quiqueck (code)",
         "paulevs (code & art)",
@@ -11,7 +11,8 @@
         "Edos (building)",
         "Yuki (art)",
         "Seaward (art)",
-        "Firel (music)"
+        "Firel (music)",
+        "Raijin"
     ],
     "contact": {
         "homepage": "https://modrinth.com/mod/betterend",

@@ -44,6 +44,8 @@ public class MossyGlowshroomFeature extends DefaultFeature {
         final RandomSource random = featureConfig.random();
         final BlockPos blockPos = featureConfig.origin();
         final WorldGenLevel world = featureConfig.level();
+        BlockState state = world.getBlockState(blockPos);
+        if (!state.getFluidState().isEmpty()) return false;
         BlockState down = world.getBlockState(blockPos.below());
         if (!down.is(EndBlocks.END_MYCELIUM) && !down.is(EndBlocks.END_MOSS)) return false;
 
