@@ -28,8 +28,8 @@ public class MusicTrackerMixin {
     // If the game is lagging to that extent, smooth music blending is the least of the player's worries
 
     @Unique private final MusicManager thisObj = (MusicManager)(Object)this;
-    @Unique private boolean waitChange = false;
-    @Unique private float volume = 1.0f;
+    @Unique private static boolean waitChange = false;
+    @Unique private static float volume = 1.0f;
 
     @Shadow @Final private Minecraft minecraft;
     @Shadow @Final private RandomSource random;
